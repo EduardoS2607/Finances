@@ -1,0 +1,21 @@
+mat-card{
+  width: 26em;
+  padding: 1.7em;
+  margin: 0.7em;
+  border-radius: 5%;
+}
+
+mat-card-title{
+  margin-bottom: 1em;
+}
+mat-card-actions{
+  margin-left: 10em;
+}
+
+mat-card-actions > h3 > a{
+  color:#6515DD;
+}
+
+hr{
+  color: red;
+}

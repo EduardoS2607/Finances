@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>{{actionBtn}}</h1>
+<div mat-dialog-content>
+  <form class="example-form" [formGroup]="formTransaction">
+      <mat-form-field>
+        <mat-label>Descrição</mat-label>
+        <input matInput formControlName="descriptionFinan">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Categoria</mat-label>
+        <select matNativeControl formControlName="categoryFinan">
+          <option value="Alimentação">Alimentação</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Educação">Educação</option>
+          <option value="Saúde">Saúde</option>
+          <option value="Salario">Salario</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Conta</mat-label>
+        <select matNativeControl formControlName="accountFinan">
+          <option value="Bradesco">Bradesco</option>
+          <option value="Carteira">Carteira</option>
+          <option value="Itau">Itau</option>
+          <option value="Nubank">Nubank</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Valor</mat-label>
+        <input matInput type="number" formControlName="valueFinan"/>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Selecione a data</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dateTransaction"/>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </form>
+  </div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="save()">{{actionBtn}}</button>
+</div>

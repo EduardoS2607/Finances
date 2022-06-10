@@ -1,0 +1,87 @@
+table {
+  width: 100%;
+}
+
+mat-radio-button {
+  margin-left: 0.3em;
+}
+
+.mat-card-custom {
+  width: 95%;
+  margin: 2em auto;
+}
+
+  .ml-1 {
+    margin-left: 1em;
+  }
+
+.openbtnFilter {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #2f4050;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 1em;
+}
+
+.add-expense{
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #2f4050;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  float: right;
+}
+
+.jumbotron{
+  background-color: #FFF;
+  padding: 1.5rem 1rem;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: rgb(244, 67, 54);
+}
+
+.money.balance-month{
+  color:rgba(0, 0, 0, 0.87);
+}
+.balance{
+  color:#2e75cc;
+}
+
+.search-expense{
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #2f4050;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+

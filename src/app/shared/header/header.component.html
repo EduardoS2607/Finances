@@ -1,0 +1,12 @@
+<div id="mySidebar" class="sidebar" sidebar>
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a [routerLink]="['/dashboard']">Dashboard</a>
+  <a [routerLink]="['/list-transactions']">Lançamentos</a>
+  <a [routerLink]="['/reports']">Relatórios</a>
+</div>
+<mat-toolbar color="primary">
+  <mat-icon (click)="openNav()">subject</mat-icon>
+  <span class="text-center" ><a [routerLink]="['/dashboard']">Controle de Gastos</a></span>
+  <span class="example-spacer"></span>
+  <mat-icon>login</mat-icon>
+</mat-toolbar>
